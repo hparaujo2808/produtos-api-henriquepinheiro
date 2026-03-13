@@ -1,16 +1,43 @@
-# API REST de Produtos
-**Nome:** Henrique Pinheiro  
-**Matrícula:** 202502931948
+# produtos-api-henriquepinheiro
 
-## Descrição
-Este projeto é uma API desenvolvida em Node.js para o gerenciamento de uma lista de produtos.
+API REST de Produtos com Node.js + Express
 
-## Instruções de Execução
-1. Instale as dependências: `npm install`
-2. Rode o projeto em modo de desenvolvimento: `npm run dev`
-3. O servidor rodará em: `http://localhost:3000`
+**Aluno:** Henrique Pinheiro  
+**Matrícula:** SEU_NUMERO_DE_MATRICULA  
+**Disciplina:** Projeto de Desenvolvimento Backend — IBMEC
+
+---
+
+## Como executar
+
+### Pré-requisitos
+- Node.js 18+
+
+### Instalação
+```bash
+npm install
+```
+
+### Iniciar em desenvolvimento
+```bash
+npm run dev
+```
+
+### Iniciar em produção
+```bash
+npm start
+```
+
+A API ficará disponível em `http://localhost:3000`
+
+---
 
 ## Endpoints
-| Método | Endpoint | Descrição |
-| :--- | :--- | :--- |
-| | | (A ser preenchido no Commit 14) |
+
+| Verbo  | Path                    | Descrição                        | Status esperado         |
+|--------|-------------------------|----------------------------------|-------------------------|
+| GET    | /api/v1/produtos        | Lista todos os produtos          | 200 OK                  |
+| GET    | /api/v1/produtos/:id    | Retorna um produto pelo ID       | 200 OK / 404 Not Found  |
+| POST   | /api/v1/produtos        | Cria um novo produto             | 201 Created / 400 Bad Request |
+| PUT    | /api/v1/produtos/:id    | Atualiza completamente um produto| 200 OK / 404 Not Found  |
+| DELETE | /api/v1/produtos/:id    | Remove um produto                | 204 No Content / 404 Not Found |
